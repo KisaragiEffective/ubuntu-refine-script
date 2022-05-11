@@ -12,8 +12,9 @@ function prepare_all() {
 }
 
 function prepare_via-cargo() {
-  cargo install jaq
+  cargo install jaq bat
 }
+
 function prepare_termurin-8-jdk() {
   sudo apt-get install -y wget apt-transport-https
   sudo wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | tee /usr/share/keyrings/adoptium.asc
