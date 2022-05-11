@@ -7,6 +7,7 @@ function install_all() {
 function prepare_all() {
   prepare_termurin-8-jdk
   prepare_git-ppa
+  prepare_rustup
 }
 
 function prepare_termurin-8-jdk() {
@@ -17,6 +18,10 @@ function prepare_termurin-8-jdk() {
 
 function prepare_git-ppa() {
   sudo add-apt-repository -y https://launchpad.net/~git-core/+archive/ubuntu/ppa
+}
+
+function prepare_rustup() {
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 }
 
 prepare_all
