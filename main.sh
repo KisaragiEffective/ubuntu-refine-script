@@ -12,7 +12,7 @@ function prepare_all() {
 }
 
 function prepare_via-cargo() {
-  cargo install jaq bat
+  cargo install jaq bat cargo-edit
 }
 
 function prepare_termurin-8-jdk() {
