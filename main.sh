@@ -1,3 +1,4 @@
+#!/bin/bash
 function install_all() {
   sudo apt-get install temurin-8-jdk
   sudo apt-get install --upgrade git
